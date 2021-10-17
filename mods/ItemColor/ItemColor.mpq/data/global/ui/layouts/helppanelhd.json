@@ -1,0 +1,388 @@
+{
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "priority": 300,
+        "fitToParent": true,
+        "childFormats": [
+            { "name": "HelpRun", "rect": { "x": -1300, "y": 70 }, "command": "run", "text": "@StrHDHelp1" },
+            { "name": "HelpStandAttack", "rect": { "x": -1300, "y": 135 }, "command": "standstill", "text": "@StrHDHelp3" },
+			{ "name": "HelpHighItems", "rect": { "x": -1300, "y": 200 }, "command": "showitems", "text": "@StrHDHelp2" },
+			
+            { "name": "HelpAutoMap", "rect": { "x": -1300, "y": 380 }, "command": "automap", "text": "@StrHDHelp4" },
+            { "name": "HelpGameMenu", "rect": { "x": -1300, "y": 445 },"command": "exitmenu", "text": "@StrHDHelp5" },
+            { "name": "HelpchatMode", "rect": { "x": -1300, "y": 510 }, "command": "chat", "text": "@StrHDHelp6" },
+            { "name": "HelpRenderToggle", "rect": { "x": -1300, "y": 575 }, "command": "toggle_renderer", "text": "@StrHDHelp8" },
+			
+            { "name": "HelpZoom", "rect": { "x": -1300, "y": 640 }, "command": "zoom", "text": "@StrHDHelpZoomDescription" },
+            { "name": "HelpMercenaryScreen", "rect": { "x": -1300, "y": 705 }, "command": "hirelingscreen", "text": "@StrHDHelp9" },
+            { "name": "HelpMercenaryPotion", "rect": { "x": -1300, "y": 770 }, "command": [ "standstill", "belt1", "belt2", "belt3", "belt4" ], "text": "@StrHDHelp10" },
+			{ "name": "Helpskillbind", "rect": { "x": -1300, "y": 835 }, "command": [ "skill1", "skill8" ], "text": "@StrHDHelp7" },
+			
+			{ "name": "HelpAddText1", "rect": { "x": -1800, "y": 1020 },"command": "test1", "text": "@StrHDHelpTEST1" },
+			{ "name": "HelpAddText2", "rect": { "x": -1800, "y": 1085 },"command": "test2", "text": "@StrHDHelpTEST2" },
+			{ "name": "HelpAddText3", "rect": { "x": -1800, "y": 1150 },"command": "test3", "text": "@StrHDHelpTEST3" },
+			{ "name": "HelpAddText4", "rect": { "x": -1800, "y": 1215 },"command": "test4", "text": "@StrHDHelpTEST4" },
+			{ "name": "HelpAddText5", "rect": { "x": -1800, "y": 1280 },"command": "test5", "text": "@StrHDHelpTEST5" },
+			// { "name": "HelpAddText6", "rect": { "x": -1800, "y": 1345 },"command": "test6", "text": "@StrHDHelpTEST6" },
+			// { "name": "HelpAddText7", "rect": { "x": -1800, "y": 1410 },"command": "test7", "text": "@StrHDHelpTEST7" },
+			
+        ],
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+        {
+            "type": "Widget", "name": "CenterSection",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "rect": { "x": -45, "y": -785 },
+            },
+            "children": [
+
+                // Text
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 0, "y": -150 },
+                        "text": "@Strhelp1",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$ExtraLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+                // All widgets below should use FONT_FORMAL_12PT
+                // Gameplay
+				{
+                    "type": "ImageWidget", "name": "rune_Help",
+                    "fields": {
+                        "rect": { "x": -1300, "y": 900, "scale": 2.0 },
+                        "filename": "PANEL/rune2",
+                    }
+                },
+				
+                {
+                    "type": "TextBoxWidget", "name": "GameplayLabel",
+                    "fields": {
+                        "rect": { "x": -1300, "y": 0 },
+                        "text": "@StrHDHelp12",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				
+				//{
+                //    "type": "TextBoxWidget", "name": "TitleTest1", //TITLE3 룬조합식
+                //    "fields": {
+                //        "rect": { "x": -1300, "y": 950 },
+                //        "text": "@StrHDHelpTitle1",
+                //        "style": {
+                //            "fontColor": "$FontColorGoldYellow",
+                //            "pointSize": "$LargeFontSize",
+                //            "alignment": { "v": "center", "h": "left" }
+                //        }
+                //    }
+                //},
+                {
+                    "type": "TextBoxWidget", "name": "HelpRun",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText1",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText2",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText3",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText4",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText5",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText6",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+				{
+                    "type": "TextBoxWidget", "name": "HelpAddText7",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpHighItems",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpStandAttack",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                // User Interface
+                {
+                    "type": "TextBoxWidget", "name": "UILabel", //TITLE2 큐빙 아이템 업그레이드
+                    "fields": {
+                        "rect": { "x": -1300, "y": 310 },
+                        "text": "@StrHDHelp11",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpAutoMap",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpGameMenu",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpchatMode",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Helpskillbind",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRenderToggle",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpZoom",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMercenaryScreen",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMercenaryPotion",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                // White text
+                {
+                    "type": "TextBoxWidget", "name": "HelpHealth", //열심히 만든놈
+                    "fields": {
+                        "rect": { "x": 700, "y": -100 },
+                        "text": "@StrHelp9",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "left" }
+                        }
+                    }
+                },
+
+
+                // Indicator lines
+
+            ]
+        },
+        // Right Anchored Panel
+        {
+            "type": "Widget", "name": "RightSection",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -230, "y": -2000 },
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 95, "y": -100 },
+                        "tooltipString": "@strClose",
+                        "sound": "cursor_close_window_hd",
+                        "onClickMessage": "PanelManager:ClosePanel:HelpPanel",
+                        "filename": "PANEL/closebtn_4x",
+                    }
+                },
+                // Warnings
+                {
+                    "type": "ImageWidget", "name": "HostileWarning",
+                    "fields": {
+                        "rect": { "x": -75, "y": 0, "scale": 1.5 },
+                        "filename": "PANEL/dogdrip",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HostileLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 190 },
+                        "text": "@StrHDHelpHostileStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+            ]
+        },
+        // Left Anchored Panel
+        {
+            "type": "Widget", "name": "LeftSection",
+            "fields": {
+                "anchor": { "x": 0, "y": 0 },
+                "rect": { "x": 250, "y": 250 },
+            },
+            "children": [
+                // Ally Display
+ 
+            ]
+        },
+    ]
+}
