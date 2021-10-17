@@ -18,11 +18,11 @@
             { "name": "HelpMercenaryPotion", "rect": { "x": -1300, "y": 770 }, "command": [ "standstill", "belt1", "belt2", "belt3", "belt4" ], "text": "@StrHDHelp10" },
 			{ "name": "Helpskillbind", "rect": { "x": -1300, "y": 835 }, "command": [ "skill1", "skill8" ], "text": "@StrHDHelp7" },
 			
-			{ "name": "HelpAddText1", "rect": { "x": -1800, "y": 1020 },"command": "test1", "text": "@StrHDHelpTEST1" },
-			{ "name": "HelpAddText2", "rect": { "x": -1800, "y": 1085 },"command": "test2", "text": "@StrHDHelpTEST2" },
-			{ "name": "HelpAddText3", "rect": { "x": -1800, "y": 1150 },"command": "test3", "text": "@StrHDHelpTEST3" },
-			{ "name": "HelpAddText4", "rect": { "x": -1800, "y": 1215 },"command": "test4", "text": "@StrHDHelpTEST4" },
-			{ "name": "HelpAddText5", "rect": { "x": -1800, "y": 1280 },"command": "test5", "text": "@StrHDHelpTEST5" },
+			{ "name": "HelpAddText1", "rect": { "x": -1300, "y": 1020 },"command": "test1", "text": "@StrHDHelpTEST1" },
+			{ "name": "HelpAddText2", "rect": { "x": -1300, "y": 1085 },"command": "test2", "text": "@StrHDHelpTEST2" },
+			{ "name": "HelpAddText3", "rect": { "x": -1300, "y": 1150 },"command": "test3", "text": "@StrHDHelpTEST3" },
+			{ "name": "HelpAddText4", "rect": { "x": -1300, "y": 1215 },"command": "test4", "text": "@StrHDHelpTEST4" },
+			{ "name": "HelpAddText5", "rect": { "x": -1300, "y": 1280 },"command": "test5", "text": "@StrHDHelpTEST5" },
 			// { "name": "HelpAddText6", "rect": { "x": -1800, "y": 1345 },"command": "test6", "text": "@StrHDHelpTEST6" },
 			// { "name": "HelpAddText7", "rect": { "x": -1800, "y": 1410 },"command": "test7", "text": "@StrHDHelpTEST7" },
 			
