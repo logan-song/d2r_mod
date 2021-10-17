@@ -914,25 +914,25 @@
   {
     "id": 1714,
     "Key": "MagicFormat",
-    "enUS": "%0 %1 %2",
+    "enUS": "%0 %1 ÿc3%2",
     "zhTW": "%0 %2 %1",
     "deDE": "a0n1:%0 %1 %2",
     "esES": "a0n1:%1 %0 %2",
     "frFR": "a0n1:%1 %0 %2",
     "itIT": "a0n1:%1 %0 %2",
-    "koKR": "%0 %1 %2",
+    "koKR": "%0 %1 ÿc3%2",
     "plPL": "a0n1:%0 %1 %2"
   },
   {
     "id": 1715,
     "Key": "GemmedNormalName",
-    "enUS": "%0 %1",
+    "enUS": "%0 %1ÿc5",
     "zhTW": "%0 %1",
     "deDE": "a0n1:%0 %1",
     "esES": "a0n1:%1 %0",
     "frFR": "a0n1:%1 %0",
     "itIT": "a0n1:%1 %0",
-    "koKR": "%0 %1",
+    "koKR": "%0 %1ÿc5",
     "plPL": "a0n1:%1 %0"
   },
   {
@@ -962,13 +962,13 @@
   {
     "id": 1718,
     "Key": "RareFormat",
-    "enUS": "%0 %1",
+    "enUS": "ÿc9%0 %1",
     "zhTW": "%0 %1",
     "deDE": "a0n1:%1 %0",
     "esES": "a0n1:%1 %0",
     "frFR": "a0n1:%1 %0",
     "itIT": "a0n1:%1 %0",
-    "koKR": "%0 %1",
+    "koKR": "ÿc9%0 %1",
     "plPL": "a0n1:%1 %0"
   },
   {
@@ -1160,7 +1160,7 @@
     "esES": "Valor de venta: %d",
     "frFR": "Valeur à la vente : %d",
     "itIT": "Valore vendita: %d",
-    "koKR": "ÿc0판매 가격: %d",
+    "koKR": "판매 가격: %d",
     "plPL": "Wartość sprzedaży: %d"
   },
   {
@@ -10862,25 +10862,25 @@
   {
     "id": 26775,
     "Key": "ItemNameMagicFormatPrefixOnly",
-    "enUS": "%0 %1",
+    "enUS": "ÿc3%0 ÿc3%1ÿc3",
     "zhTW": "%0%1",
     "deDE": "a0n1:%0 %1",
     "esES": "a0n1:%1 %0",
     "frFR": "a0n1:%1 %0",
     "itIT": "a0n1:%1 %0",
-    "koKR": "%0 %1",
+    "koKR": "ÿc3%0 ÿc3%1ÿc3",
     "plPL": "a0n1:%0 %1"
   },
   {
     "id": 26776,
     "Key": "ItemNameMagicFormatSuffixOnly",
-    "enUS": "%0 %1",
+    "enUS": "ÿc3%0 ÿc3%1ÿc3",
     "zhTW": "%0%1",
     "deDE": "a0n1:%0 %1",
     "esES": "a0n1:%1 %0",
     "frFR": "a0n1:%1 %0",
     "itIT": "a0n1:%1 %0",
-    "koKR": "%0 %1",
+    "koKR": "ÿc3%0 ÿc3%1ÿc3",
     "plPL": "a0n1:%0 %1"
   }
 ]
