@@ -122,13 +122,13 @@
   {
     "id": 2286,
     "Key": "GhoulRI",
-    "enUS": "ÿc9Ghoul",
+    "enUS": "Ghoul",
     "zhTW": "食屍鬼之",
     "deDE": "Ghul",
     "esES": "[fs]macabra[ms]macabro[fp]macabras[mp]macabros",
     "frFR": "Goule",
     "itIT": "del ghoul",
-    "koKR": "ÿc9구울",
+    "koKR": "구울",
     "plPL": "Ghula"
   },
   {
@@ -2444,7 +2444,7 @@
     "esES": "Baal",
     "frFR": "Baal",
     "itIT": "Baal",
-    "koKR": "바알",
+    "koKR": "바알 *",
     "plPL": "Baal"
   },
   {
@@ -4334,25 +4334,25 @@
   {
     "id": 11013,
     "Key": "Fiendra",
-    "enUS": "ÿc9Fiend",
+    "enUS": "Fiend",
     "zhTW": "魔鬼",
     "deDE": "Teufel",
     "esES": "Maligno",
     "frFR": "du Diable",
     "itIT": "Demoniaco",
-    "koKR": "ÿc9피엔드",
+    "koKR": "피엔드",
     "plPL": "Biesa"
   },
   {
     "id": 11014,
     "Key": "Wraithra",
-    "enUS": "ÿc9Wraith",
+    "enUS": "Wraith",
     "zhTW": "忿怒",
     "deDE": "Gespenst",
     "esES": "Espectro",
     "frFR": "du Spectre",
     "itIT": "Spettrale",
-    "koKR": "ÿc9레이쓰",
+    "koKR": "레이쓰",
     "plPL": "Upiora"
   },
   {
@@ -4508,7 +4508,7 @@
     "esES": "Baal",
     "frFR": "Baal",
     "itIT": "Baal",
-    "koKR": "바알",
+    "koKR": "가짜 바알",
     "plPL": "Baal"
   },
   {
